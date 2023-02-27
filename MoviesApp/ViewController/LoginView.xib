@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginView" customModule="MoviesApp" customModuleProvider="target">
+            <connections>
+                <outlet property="txtPassword" destination="OGm-Mg-UzI" id="bxb-11-fIu"/>
+                <outlet property="txtUsername" destination="aha-qK-qZB" id="o7b-7d-bou"/>
+                <outlet property="view" destination="QSo-aW-rJA" id="uXE-da-DDo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="QSo-aW-rJA">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k5X-tf-Yb7">
+                    <rect key="frame" x="20" y="50" width="353" height="36"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                    <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoApp" translatesAutoresizingMaskIntoConstraints="NO" id="2A1-Yg-QHK">
+                    <rect key="frame" x="67" y="156" width="240" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="KUZ-60-LeJ"/>
+                        <constraint firstAttribute="width" constant="240" id="Onu-4E-7TG"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="nfp-Z2-c5Z">
+                    <rect key="frame" x="30" y="486" width="333" height="176"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aha-qK-qZB">
+                            <rect key="frame" x="0.0" y="0.0" width="333" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="0.87143004970000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="6gW-9M-ZMX"/>
+                            </constraints>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OGm-Mg-UzI">
+                            <rect key="frame" x="0.0" y="63" width="333" height="40"/>
+                            <color key="backgroundColor" white="0.87" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="w6R-2l-6As"/>
+                            </constraints>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yal-Vp-Let">
+                            <rect key="frame" x="0.0" y="126" width="333" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="qNi-PC-snb"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" image="rectangle.portrait.and.arrow.right" catalog="system" title=" Login "/>
+                            <connections>
+                                <action selector="btnLogin:" destination="-1" eventType="touchUpInside" id="fgZ-c6-H3Z"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Qj0-45-CeC"/>
+            <color key="backgroundColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color key="tintColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="0.8980392157" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nfp-Z2-c5Z" firstAttribute="leading" secondItem="Qj0-45-CeC" secondAttribute="leading" constant="30" id="64t-OV-pok"/>
+                <constraint firstItem="2A1-Yg-QHK" firstAttribute="top" secondItem="k5X-tf-Yb7" secondAttribute="bottom" constant="70" id="JaY-kR-uiQ"/>
+                <constraint firstItem="2A1-Yg-QHK" firstAttribute="leading" secondItem="Qj0-45-CeC" secondAttribute="leading" constant="67" id="O6q-4u-pW5"/>
+                <constraint firstItem="k5X-tf-Yb7" firstAttribute="top" secondItem="QSo-aW-rJA" secondAttribute="top" constant="50" id="dDV-dS-TzB"/>
+                <constraint firstItem="Qj0-45-CeC" firstAttribute="trailing" secondItem="nfp-Z2-c5Z" secondAttribute="trailing" constant="30" id="i1e-pU-ikN"/>
+                <constraint firstItem="nfp-Z2-c5Z" firstAttribute="top" secondItem="2A1-Yg-QHK" secondAttribute="bottom" constant="30" id="jCq-QN-htD"/>
+                <constraint firstItem="Qj0-45-CeC" firstAttribute="trailing" secondItem="k5X-tf-Yb7" secondAttribute="trailing" constant="20" id="nvv-Lk-51G"/>
+                <constraint firstItem="k5X-tf-Yb7" firstAttribute="leading" secondItem="Qj0-45-CeC" secondAttribute="leading" constant="20" id="sOx-Br-gcO"/>
+            </constraints>
+            <point key="canvasLocation" x="52.307692307692307" y="19.90521327014218"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logoApp" width="405" height="461"/>
+        <image name="rectangle.portrait.and.arrow.right" catalog="system" width="128" height="109"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
